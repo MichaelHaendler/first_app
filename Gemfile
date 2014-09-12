@@ -1,8 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.0.0'#added by me
-
+#ruby '2.0.0'#added by me
+ruby '1.9.3'#added by me
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.8'
+
+#added by me 
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
+end
 
 #added by me 
 group :development do
